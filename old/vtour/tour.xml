@@ -1,0 +1,90 @@
+﻿<krpano version="1.19" title="Sandra Salles Arquitetura">
+
+	<include url="skin/vtourskin.xml" />
+
+	<include url="padrao.xml" />
+	
+	<scene name="scene_p1" title="Sala" onstart="" thumburl="panos/p1.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-135.322" vlookat="0.970" fovtype="MFOV" fov="104.190" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/p1.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/p1.tiles/pano_%s.jpg" />
+		</image>
+		
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-76.622" atv="12.343" onclick="loadscene(scene_p3,null,MERGE,BLEND(1))" url="hotspots/target_vermelho.png" onloaded="do_crop_animation(128,128, 60);" scale="0.40" zoom="true" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="-134.142" atv="6.063" onclick="loadscene(scene_p2,null,MERGE,BLEND(1))" url="hotspots/target_vermelho.png" onloaded="do_crop_animation(128,128, 60);" scale="0.40" zoom="true" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="133.020" atv="7.692"  onclick="loadscene(scene_p4,null,MERGE,BLEND(1))" url="hotspots/target_vermelho.png" onloaded="do_crop_animation(128,128, 60);" scale="0.40" zoom="true" />
+
+	</scene>
+
+	<scene name="scene_p2" title="Varanda" onstart="" thumburl="panos/p2.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-136.696" vlookat="-0.519" fovtype="MFOV" fov="118.112" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/p2.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/p2.tiles/pano_%s.jpg" />
+		</image>
+		
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-163.665" atv="13.256" onclick="loadscene(scene_p1,null,MERGE,BLEND(1))" url="hotspots/target_vermelho.png" onloaded="do_crop_animation(128,128, 60);" scale="0.40" zoom="true" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="88.930" atv="11.728"   onclick="loadscene(scene_p3,null,MERGE,BLEND(1))" url="hotspots/target_vermelho.png" onloaded="do_crop_animation(128,128, 60);" scale="0.40" zoom="true" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="-115.368" atv="2.512"  onclick="loadscene(scene_p4,null,MERGE,BLEND(1))" url="hotspots/target_vermelho.png" onloaded="do_crop_animation(128,128, 60);" scale="0.40" zoom="true" />
+
+		
+	</scene>
+
+	<scene name="scene_p3" title="Living" onstart="" thumburl="panos/p3.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="74.697" vlookat="1.659" fovtype="MFOV" fov="109.671" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/p3.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/p3.tiles/pano_%s.jpg" />
+		</image>
+			
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-153.856" atv="10.337" onclick="loadscene(scene_p2,null,MERGE,BLEND(1))" url="hotspots/target_vermelho.png" onloaded="do_crop_animation(128,128, 60);" scale="0.40" zoom="true" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="83.748" atv="8.674"    onclick="loadscene(scene_p1,null,MERGE,BLEND(1))" url="hotspots/target_vermelho.png" onloaded="do_crop_animation(128,128, 60);" scale="0.40" zoom="true" />
+		<hotspot name="spot3" style="skin_hotspotstyle" ath="95.098" atv="1.632"    onclick="loadscene(scene_p4,null,MERGE,BLEND(1))" url="hotspots/target_vermelho.png" onloaded="do_crop_animation(128,128, 60);" scale="0.40" zoom="true" />
+		
+
+	</scene>
+
+	<scene name="scene_p4" title="Cozinha" onstart="" thumburl="panos/p4.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-43.917" vlookat="0.100" fovtype="MFOV" fov="114.969" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/p4.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/p4.tiles/pano_%s.jpg" />
+		</image>
+
+		
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-134.613" atv="8.653" onclick="loadscene(scene_p5,null,MERGE,BLEND(1))" url="hotspots/target_vermelho.png" onloaded="do_crop_animation(128,128, 60);" scale="0.40" zoom="true" />
+		<hotspot name="spot2" style="skin_hotspotstyle" ath="24.583" atv="3.847"   onclick="loadscene(scene_p1,null,MERGE,BLEND(1))" url="hotspots/target_vermelho.png" onloaded="do_crop_animation(128,128, 60);" scale="0.40" zoom="true" />
+		
+
+	</scene>
+
+	<scene name="scene_p5" title="Lavabo" onstart="" thumburl="panos/p5.tiles/thumb.jpg" lat="" lng="" heading="">
+
+		<view hlookat="-271.571" vlookat="90.000" fovtype="MFOV" fov="118.112" maxpixelzoom="2.0" fovmin="70" fovmax="140" limitview="auto" />
+
+		<preview url="panos/p5.tiles/preview.jpg" />
+
+		<image>
+			<cube url="panos/p5.tiles/pano_%s.jpg" />
+		</image>
+		
+		<hotspot name="spot1" style="skin_hotspotstyle" ath="-77.582" atv="16.777" onclick="loadscene(scene_p4,null,MERGE,BLEND(1))" url="hotspots/target_vermelho.png" onloaded="do_crop_animation(128,128, 60);" scale="0.40" zoom="true" />
+		
+
+	</scene>
+
+
+</krpano>

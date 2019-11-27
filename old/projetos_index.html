@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $("#nav-menu").load("templates/nav-menu.html");
+            $("#footer").load("templates/footer.html");
+            $("#header").load("templates/header.html");
+        });
+    </script>
+    <div id="header"></div>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+
+    <div id="nav-menu"></div>
+
+    <h2 class="display-4" style="margin: 1em"> Projetos </h2>
+
+    <div class="container fluid padding">
+        <div class="row text-center">
+
+            <!-- row 1 -->
+
+            <div class="col-md-4" style="padding: 0%">
+                <div class="card" style="width: 18rem;">
+                    <img src="graphics/background2.jpg" class="card-img card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Casa Araruama</h5>
+                        <p class="card-text">Reforma da casa com instalação de painéis solares e reforma da área externa
+                        </p>
+                        <a href="#" class="btn btn-primary">Veja mais</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4" style="padding: 0%">
+                <div class="card" style="width: 18rem;">
+                    <img src="graphics/background.jpg" class="card-img card-img-top " alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Apartamento CasaBlanca</h5>
+                        <p class="card-text">Reforma da casa com instalação de painéis solares e reforma da área externa
+                        </p>
+                        <a href="#" class="btn btn-primary">Veja mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4" style="padding: 0%">
+                <div class="card" style="width: 18rem;">
+                    <img src="graphics/background2.jpg" class="card-img card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Apartamento Barra Bonita</h5>
+                        <p class="card-text">Reforma da casa com instalação de painéis solares e reforma da área externa
+                        </p>
+                        <a href="#" class="btn btn-primary">Veja mais</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div id="footer"></div>
+</body>
+
+</html>
