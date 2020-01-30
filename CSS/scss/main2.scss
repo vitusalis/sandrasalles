@@ -7,8 +7,11 @@ $primary-color: #1f1f1f;
 $primary-color-faded: #1f1f1f80;
 $background-color: #DEDEDE;
 $background-color-faded: #DEDEDE80;
-$link-color-strong: rgb(158, 94, 218);
-$link-color: rgb(176, 122, 226);
+// $link-color-strong: rgb(158, 94, 218);
+// $link-color: rgb(176, 122, 226);
+$link-color-strong: #ECA02C;
+$link-color: #ffa514;
+
 $transition-default: all 0.3s ease;
 $default-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 $shadow-strong: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -111,13 +114,13 @@ body{
         width: 120px;
         height: 35px;
         border-radius: 30px;
-        background-color: $link-color;
+        background-color: $link-color-strong;
         border: none;
         color: white;
         transition: all 0.3s ease;
         &:hover{
             cursor: pointer;
-            background-color: $link-color-strong;
+            background-color: $link-color;
             box-shadow: $default-shadow;
         }
     }
