@@ -1,0 +1,210 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+// Sass variables
+$primary-color: #1f1f1f;
+$primary-color-faded: #1f1f1f80;
+$background-color: #DEDEDE;
+$background-color-faded: #DEDEDE80;
+$link-color: rgb(158, 94, 218);
+
+$font-weights: (
+    "regular": 400,
+    "medium": 500,
+    "bold": 700,
+);
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1em;
+//   Using map
+//   font-weight: map-get($map: $font-weights, $key: bold);
+  margin: 0;
+  padding: 0;
+  background-color: $background-color;
+}
+
+.nav {
+    display: flex;
+    margin: 1% auto;
+    flex-direction: column;
+}
+.nav li , .footer_links li{
+  list-style: none;
+  display: inline-block;
+  padding: 0 3%;
+}
+
+.nav li > a, .footer_links li > a {
+    text-decoration: none;
+    color: inherit;
+    padding: 0px 5px;
+    // transition: all 0.4s ease;
+}
+.nav li:hover > a, .footer_links li:hover{
+    color: $link-color;
+}
+
+.nav_links{
+    display: flex;
+    flex: 1 1 0px;
+    padding: 0 3%;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.nav > :nth-child(1){
+    order: 2;
+}
+.nav > :nth-child(2){
+    order: 1;
+}
+.nav > :nth-child(3){
+    order: 3;
+    
+}
+
+.logo{
+    font-size: 2.4em;
+}
+.header_logo{
+    max-width: 100%;
+    height: auto;
+}
+
+.main{
+    // padding: 3%;
+}
+
+.banner{
+    width: 100%;
+    position: relative;
+    // text-align: center;
+
+    .image{
+        width: 100%;
+    }
+    .text{
+        text-align: center;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        // text-shadow: 2px 2px #808080;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.7);
+        // text-shadow: 3px 4px 7px rgba($color: $link-color, $alpha: 0.5);
+        .title{
+            font-size: 3.2em;
+            margin: 0px;
+        }
+        .subtitle{
+            margin: 0px;
+            font-size: 1.6em;
+            a{
+                text-shadow: none;
+                text-decoration: none;
+                color: $link-color;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+}
+
+.main_posts{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+footer{
+    border-top: 1px solid $primary-color;
+    bottom: 10px;
+    padding: 1%;
+}
+
+.footer_links{
+    margin: 0;
+    width:100%;
+    padding: 0;
+    align-items: center;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.post{
+    width: 300px;
+    background-color: white;
+    border-radius: 0.6em;
+    margin: 40px 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    .picture{
+        border-top-left-radius: inherit;
+        border-top-right-radius: inherit;
+        width: inherit;
+        transition: all 0.5s ease;
+
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+    .body{
+        font-family: 'Raleway', sans-serif;
+        padding: 0 5% 5% 5%;
+
+        .title{
+            margin-bottom: 0px;
+            a{
+                text-decoration: none;
+                color: $primary-color;
+                transition: all 0.3s ease;
+
+                &:hover{
+                    color: $primary-color-faded;
+                }
+            }
+        }
+        .subtitle{
+            font-family: 'Roboto Condensed', sans-serif;
+            margin-top: 0px;
+        }
+        .text{
+            color: $primary-color;
+        }
+
+        & > *{
+            margin: 10px;
+        }
+    }
+}
+
+@media (min-width: 769px) {
+    .nav{
+        flex-direction: row;
+    }
+    /* positioning header properly */
+    .nav >:nth-child(1){
+        justify-content: flex-start;
+        order: 1;
+        
+    }
+    .nav >:nth-child(2){
+        justify-content: center;
+        order: 2;
+        
+    }
+    .nav >:nth-child(3){
+        justify-content: flex-end;
+        order: 3;
+    }    
+}
