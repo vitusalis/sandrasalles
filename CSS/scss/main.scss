@@ -5,22 +5,26 @@
 // Sass variables
 $primary-color: #1f1f1f;
 $primary-color-faded: #1f1f1f80;
-$background-color: #DEDEDE;
-$background-color-faded: #DEDEDE80;
-// $link-color-strong: rgb(158, 94, 218);
-// $link-color: rgb(176, 122, 226);
+
+// $background-color: #DEDEDE;
+// $background-color-faded: #DEDEDE80;
+$background-color: #0E2248;
+$background-color-faded: #0E224880;
+
 $link-color-strong: #ECA02C;
 $link-color: #ffa514;
+$text-color: white;
 
 $transition-default: all 0.3s ease;
-$default-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-$shadow-strong: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+$default-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+$shadow-strong: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 
 
 body{
     font-family: "Montserrat", sans-serif;
     background-color: $background-color;
     margin: 0px;
+    
 }
 
 .nav .link{
@@ -31,9 +35,12 @@ body{
     flex: 1 1 0px;
     align-items: flex-end;
     transition: $transition-default;
+    // border-bottom: 1px solid $link-color;
+    margin: 2px;
     a {
         text-decoration: none;
-        color: $primary-color;
+        // color: $link-color;
+        color: $text-color;
         justify-content: center;
         margin: 10px;
     }
@@ -68,7 +75,7 @@ body{
 /* positioning header properly */
 .nav >:nth-child(1){
     justify-content: flex-start;
-    padding: 3% 0 0 5%;
+    padding: 1% 0 0 5%;
     flex-grow: 1.5;
     
 }
@@ -87,9 +94,10 @@ body{
 .banner{
     margin: 40px 0;
     display: flex;
+    color: $text-color;
     .picture{
         width: 50%;
-        box-shadow: $shadow-strong;
+        // box-shadow: $shadow-strong;
     }
     .text{
         margin: 0 0 0 2em;
@@ -107,8 +115,6 @@ body{
             font-size: 2.5em;
             margin: 8px 0;
         }
-        // .text_below{            
-        // }
         
     }
     .button{
@@ -195,6 +201,11 @@ body{
 .post{
     position: relative;
     overflow: hidden;
+    margin: 10px;
+
+    // TODO
+    height: 320px;
+    // box-shadow: $default-shadow;
     
     &:hover {
         // .picture{
@@ -205,6 +216,7 @@ body{
         }
     }
     .content{
+        
         margin-left: 10px;
         padding: 10px;
         background-color: white;

@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #DEDEDE;
+  background-color: #0E2248;
   margin: 0px;
 }
 
@@ -24,11 +24,12 @@ body {
           align-items: flex-end;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  margin: 2px;
 }
 
 .nav .link a {
   text-decoration: none;
-  color: #1f1f1f;
+  color: white;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -81,7 +82,7 @@ body {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  padding: 3% 0 0 5%;
+  padding: 1% 0 0 5%;
   -webkit-box-flex: 1.5;
       -ms-flex-positive: 1.5;
           flex-grow: 1.5;
@@ -107,12 +108,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: white;
 }
 
 .banner .picture {
   width: 50%;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .banner .text {
@@ -155,8 +155,8 @@ body {
 .banner .button:hover {
   cursor: pointer;
   background-color: #ffa514;
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
 
 .main_posts {
@@ -173,6 +173,8 @@ body {
 .post {
   position: relative;
   overflow: hidden;
+  margin: 10px;
+  height: 320px;
 }
 
 .post:hover .content {
