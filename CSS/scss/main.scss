@@ -220,11 +220,12 @@ footer {
         flex: 1;
         display: flex;
         justify-content: center;
+        transform: scale(0.8);
         a {
             color: $text-color;
             text-decoration: none;
             display: flex;
-            margin: 20px 45px;
+            margin: 10px 45px;
             transition: $transition-default;
             p {
                 position: relative;

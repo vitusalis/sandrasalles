@@ -283,6 +283,8 @@ footer .social {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
 }
 
 footer .social a {
@@ -291,7 +293,7 @@ footer .social a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 20px 45px;
+  margin: 10px 45px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
