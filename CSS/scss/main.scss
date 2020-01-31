@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 
 // Sass variables
 $primary-color: #1f1f1f;
@@ -8,197 +8,138 @@ $primary-color-faded: #1f1f1f80;
 
 // $background-color: #DEDEDE;
 // $background-color-faded: #DEDEDE80;
-$background-color: #0E2248;
-$background-color-faded: #0E224880;
+$background-color: #0e2248;
+$background-color-faded: #0e224880;
 
-$link-color-strong: #ECA02C;
+$link-color-strong: #eca02c;
 $link-color: #ffa514;
 $text-color: white;
 
+$page-margin: 7%;
+
 $transition-default: all 0.3s ease;
-$default-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
-$shadow-strong: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+// $default-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+$default-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+$shadow-strong: 0 4px 8px 0 rgba(255, 255, 255, 0.2),
+    0 6px 20px 0 rgba(255, 255, 255, 0.19);
 
-
-body{
+body {
     font-family: "Montserrat", sans-serif;
     background-color: $background-color;
     margin: 0px;
-    
 }
 
-.nav .link{
-    height: 100%;
-    font-size: 1.1em;
-    display: flex;
-    justify-content: center;
-    flex: 1 1 0px;
-    align-items: flex-end;
-    transition: $transition-default;
-    // border-bottom: 1px solid $link-color;
-    margin: 2px;
-    a {
-        text-decoration: none;
-        // color: $link-color;
-        color: $text-color;
-        justify-content: center;
-        margin: 10px;
-    }
-}
-
-.nav .link:hover{
-    background-color: $link-color;
-    background-color: $link-color;
-    a{
-        transform: scale(1.1);
-        transition: $transition-default;
-        color: white;
-    }
-
-}
-
-.nav_links{
+.nav_links {
     display: flex;
     flex: 1 1 0px;
     padding: 0;
     align-items: center;
     justify-content: center;
+    .link {
+        height: 100%;
+        margin: 2px;
+        font-size: 1.1em;
+        display: flex;
+        justify-content: center;
+        flex: 1 1 0px;
+        align-items: flex-end;
+        transition: $transition-default;
+        // border-bottom: 1px solid $link-color;
+        a {
+            text-decoration: none;
+            color: $text-color;
+            justify-content: center;
+            margin: 10px;
+        }
+        &:hover {
+            background-color: $link-color;
+            background-color: $link-color;
+            a {
+                transform: scale(1.1);
+                transition: $transition-default;
+                color: $text-color;
+            }
+        }
+    }
 }
 
-.nav{
+.nav {
     font-family: "Roboto Condensed";
     display: flex;
     margin: 0;
     flex-direction: row;
+
+    .logo {
+        justify-content: flex-start;
+        padding: 1% 0 0 5%;
+        flex-grow: 1.2;
     }
-
-/* positioning header properly */
-.nav >:nth-child(1){
-    justify-content: flex-start;
-    padding: 1% 0 0 5%;
-    flex-grow: 1.5;
-    
-}
-.nav >:nth-child(2){
-    justify-content: center;
-    margin: 0;
-    flex-grow: 1;
-    
+    .menu {
+        justify-content: center;
+        margin: 0;
+        flex-grow: 1;
+    }
 }
 
-.header_logo{
-    max-width: 100%;
-    height: auto;
+.section_title {
+    width: 100%;
+    text-align: center;
+    margin-top: $page-margin;
+    h1 {
+        color: $text-color;
+    }
 }
 
-.banner{
+.banner {
     margin: 40px 0;
     display: flex;
     color: $text-color;
-    .picture{
+    .picture {
         width: 50%;
         // box-shadow: $shadow-strong;
     }
-    .text{
+    .text {
         margin: 0 0 0 2em;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        
-        .text_above{
+
+        .text_above {
             font-weight: 400;
             font-size: 1.4em;
             margin: 8px 0;
         }
-        .main_text{
+        .main_text {
             font-weight: 500;
             font-size: 2.5em;
             margin: 8px 0;
         }
-        
     }
-    .button{
+    .button {
         width: 120px;
         height: 35px;
         border-radius: 30px;
         background-color: $link-color-strong;
         border: none;
-        color: white;
+        color: $text-color;
         transition: all 0.3s ease;
-        &:hover{
+        &:hover {
             cursor: pointer;
             background-color: $link-color;
             box-shadow: $default-shadow;
         }
     }
-
-    
 }
 
-.main_posts{
+.main_posts {
     margin: 0 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
 
-// .post{
-//     margin: 30px 0;
-//     position: relative;
-//     box-shadow: $default-shadow;
-//     .picture{
-//         transition: all 0.3s ease-in-out;
-//     }
-    
-//     .content{
-//         display: flex;
-//         flex-direction: column;
-//         align-items: center;
-
-//         width: 90%;
-//         color: rgba(0, 0, 0, 0);
-//         position: absolute;
-//         top: 50%;
-//         left: 50%;
-//         transform: translate(-50%, -50%);
-//         z-index: 1;
-//         transition: all 0.3s ease;
-//         .title{
-//             font-size: 2em;
-//             margin: 0px;
-//             font-weight: 500;
-//             a{
-//                 text-decoration: none;
-//                 color: inherit;
-//                 &:hover{
-//                     text-decoration: underline;
-//                 }
-//             }
-//         }
-//         .subtitle{
-//             font-size: 1.2em;
-//             font-weight: 400;
-//         }
-//         .text{
-//             display: none;
-//         }
-        
-//     }
-//     &:hover {
-//         .picture{
-//             filter: blur(2px);
-//             -webkit-filter: blur(2px);
-//         }
-//         .content{
-//             // backdrop-filter: blur(10px);
-//             color: white;
-//             text-shadow: 1.2px 0.8px black;
-//         }
-//     }
-// }
-
-.post{
+.post {
     position: relative;
     overflow: hidden;
     margin: 10px;
@@ -206,17 +147,16 @@ body{
     // TODO
     height: 320px;
     // box-shadow: $default-shadow;
-    
+
     &:hover {
         // .picture{
         // }
-        .content{
+        .content {
             display: block;
             top: 88%;
         }
     }
-    .content{
-        
+    .content {
         margin-left: 10px;
         padding: 10px;
         background-color: white;
@@ -228,27 +168,72 @@ body{
         left: 50%;
         transition: $transition-default;
         transform: translate(-50%, -50%);
-        .title{
+        .title {
             margin: 0;
             font-weight: 500;
-            a{
+            a {
                 color: inherit;
                 text-decoration: none;
                 transition: $transition-default;
-                &:hover{
+                &:hover {
                     color: $link-color;
                 }
             }
         }
-        .subtitle{
+        .subtitle {
             margin: 0px;
             font-weight: 400;
         }
     }
-    .picture{
+    .picture {
         border: 10px solid white;
     }
 }
-.space{
+.space {
     height: 200px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin: $page-margin 0 0 0;
+    border-top: 1px solid $text-color;
+    .links {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .link {
+            margin: 20px;
+            font-weight: 500;
+            a {
+                color: $text-color;
+                text-decoration: none;
+                transition: $transition-default;
+                &:hover {
+                    color: $link-color;
+                }
+            }
+        }
+    }
+    .social {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        a {
+            color: $text-color;
+            text-decoration: none;
+            display: flex;
+            margin: 20px 45px;
+            transition: $transition-default;
+            p {
+                position: relative;
+                bottom: 10px;
+                margin-left: 5px;
+            }
+            &:hover {
+                color: $link-color;
+            }
+        }
+    }
 }
