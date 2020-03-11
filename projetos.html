@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,41 +13,19 @@
             src="https://kit.fontawesome.com/fbe18f4fc8.js"
             crossorigin="anonymous"
         ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
         <title>SandraSalles</title>
+        <script>
+            $(function() {
+                $("#header").load("templates/header.html");
+                $("#footer").load("templates/footer.html");
+                $(window).scrollTop(0);
+            });
+        </script>
     </head>
 
     <body>
-        <header>
-            <nav class="nav">
-                <div class="nav_links logo">
-                    <a href="#!" title="Sandra Salles Arquiterura">
-                        <img
-                            src="graphic/logo_white.png"
-                            alt="logo"
-                            class="header_logo"
-                            title="Sandra Salles Arquitetura"
-                        />
-                    </a>
-                </div>
-                <div class="nav_links menu">
-                    <div class="link">
-                        <a href="index.html" title="Home">Home</a>
-                    </div>
-                    <div class="link">
-                        <a href="#!" title="Projetos">Projetos</a>
-                    </div>
-                    <div class="link">
-                        <a href="#!" title="Tour">Tour Virtual</a>
-                    </div>
-                    <div class="link">
-                        <a href="#!" title="Contato">Contato</a>
-                    </div>
-                    <div class="link">
-                        <a href="#!" title="Sobre">Sobre</a>
-                    </div>
-                </div>
-            </nav>
-        </header>
+        <header id="header"></header>
 
         <div class="section_title">
             <h1>Meus Projetos</h1>
@@ -107,7 +85,7 @@
                     <a href="#!" title="Projetos">Projetos</a>
                 </div>
                 <div class="link">
-                    <a href="#!" title="Tour">Tour Virtual</a>
+                    <a href="vtour/tour.html" title="Tour">Tour Virtual</a>
                 </div>
                 <div class="link">
                     <a href="#!" title="Contato">Contato</a>
